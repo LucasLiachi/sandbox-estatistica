@@ -1,6 +1,6 @@
 from scipy.stats import binom 
 n = 5
-p = 0.75
+p = 0.80
 r_values = list(range(n + 1)) 
 mean, var = binom.stats(n, p) 
 dist = [binom.pmf(r, n, p) for r in r_values ] 
