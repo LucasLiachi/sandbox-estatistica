@@ -1,58 +1,31 @@
-import requests
-import sqlite3
-from peewee import SqliteDatabase, Model, CharField
+from nba_api.stats.endpoints._base import Endpoint
+from nba_api.stats.library.http import NBAStatsHTTP
 
-# Configurações do banco de dados SQLite
-db = SqliteDatabase('db/nba_teams.db')
+class TeamDetails(Endpoint):
+    # ... (the rest of the class implementation as provided in the original code)
 
-# Definição do modelo de dados
-class Team(Model):
-    name = CharField()
-    city = CharField()
+    # Function to get team details for a list of team IDs
+    def get_team_details_for_ids(team_ids):
+        team_details_list = []
 
-    class Meta:
-        database = db
+        for team_id in team_ids:
+            team_details = TeamDetails(team_id)
+            team_details_list.append(team_details)
 
-# Inicialização do banco de dados
-db.connect()
-db.create_tables([Team])
+        return team_details_list
 
-# URL da API da NBA para obter detalhes dos times
-api_url = 'http://stats.nba.com/stats/teamdetails'
+# Example usage
+if __name__ == "__main__":
+    # Replace with actual team IDs
+    team_ids = [1610612759, 1610612744, 1610612761, 1610612755]
 
-# Requisição à API
-response = requests.get(api_url)
+    # Get team details for the list of team IDs
+    team_details_list = TeamDetails.get_team_details_for_ids(team_ids)
 
-# Verificar se a resposta foi bem-sucedida (código 200)
-if response.status_code == 200:
-    try:
-        data = response.json()
-
-        # Coleta de dados e inserção no banco de dados
-        teams = data['league']['standard']
-        for team_data in teams:
-            name = team_data['fullName']
-            city = team_data['city']
-
-            # Inserindo dados no banco de dados SQLite
-            Team.create(name=name, city=city)
-
-        # Exemplo de consulta ao banco de dados
-        query_result = Team.select()
-        for team in query_result:
-            print(f"Team: {team.name}, City: {team.city}")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Erro ao processar a resposta da API: {e}")
-
-else:
-    print(f"Erro na requisição à API. Código de status: {response.status_code}")
-    
-    try:
-        error_data = response.json()
-        print(f"Detalhes do erro: {error_data}")
-    except:
-        print("Não foi possível obter detalhes do erro.")
-        
-# Fechar a conexão com o banco de dados
-db.close()
+    # Display team information
+    for team_details in team_details_list:
+        print("Team Background for Team ID", team_details.parameters["TeamID"])
+        print("Team Name:", team_details.team_background.get_dict()["NICKNAME"])
+        print("City:", team_details.team_background.get_dict()["CITY"])
+        print("Arena:", team_details.team_background.get_dict()["ARENA"])
+        print("------------------------------")
