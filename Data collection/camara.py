@@ -24,7 +24,7 @@ def criar_e_inserir_no_banco_de_dados(dados, tabela, conexao):
 url_api = 'https://dadosabertos.camara.leg.br/api/v2/deputados'
 
 # Criar conexão com o banco de dados SQLite
-conexao = sqlite3.connect('sandbox-estatistica/db/camara.db')
+conexao = sqlite3.connect('db/camara.db')
 
 # Requisição dos dados de todos os deputados
 dados_todos_deputados = requisitar_dados_api(url_api)
