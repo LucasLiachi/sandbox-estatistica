@@ -18,7 +18,7 @@ db.connect()
 db.create_tables([Team])
 
 # URL da API da NBA para obter detalhes dos times
-api_url = 'https://data.nba.net/prod/v2/2018/teams.json'
+api_url = 'http://stats.nba.com/stats/teamdetails'
 
 # Requisição à API
 response = requests.get(api_url)
