@@ -8,7 +8,7 @@ O objetivo deste projeto é servir como um repositório centralizado para os meu
 
 ## Metodos empregados
 
-- **Pesquisa Online**:
+- **Pesquisa**:
 - **Ferramentas de LLM**:
 - **Linguagens de programação**:
 - **Estatística**:
