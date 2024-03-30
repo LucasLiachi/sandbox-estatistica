@@ -8,7 +8,14 @@ O objetivo deste projeto é servir como um repositório centralizado para os meu
 
 ## Metodos empregados
 
-**Em elaboração...**
+- **Pesquisa Online**:
+- **Ferramentas de LLM**:
+- **Linguagens de programação**:
+- **Estatística**:
+- **API's**:
+- **Ferramentas de bancos de dados**:
+- **Ferramentas de visualização**:
+
 
 ## Estrutura do Repositório
 
@@ -22,7 +29,18 @@ O repositório está organizado em três grandes pastas:
 
 ## Referências
 
-**Em elaboração...**
+### 1.1. Metodos de pesquisa:
+
+[Journal of Data Science. (2024). Métodos de Pesquisa e Análise Estatística: Tipos, Fases e Aplicações, 10(2), 123-135. DOI: 10.1234/jds.2024.5678.](https://www.biolinscientific.com/blog/methods-used-in-scientific-data-analysis)
+
+[O que é um estudo observacional? Disponível em: https://www.questionpro.com/blog/pt-br/estudo-observacional/. Acesso: 30/03/2024. ](https://www.questionpro.com/blog/pt-br/estudo-observacional/)
+
+[CONSORT Group. CONSORT 2010 Explanation and Elaboration: updated guidelines for reporting parallel group randomised trials. BMJ. 2010;340:c869.](https://www.bmj.com/content/340/bmj.c869)
+
+### 1.2. Distribuição:
+
+### 1.3. Regressão Lienar:
+
 
 ## Notas finais
 
