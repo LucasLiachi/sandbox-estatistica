@@ -41,6 +41,10 @@ O repositório está organizado em três grandes pastas:
 
 ### 1.3. Regressão Lienar:
 
+### 2.1. NBA:
+
+[pypi.org nba_api 1.4.1 pip install nba_api](https://pypi.org/project/nba_api/)
+
 
 ## Notas finais
 

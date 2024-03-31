@@ -8,7 +8,7 @@ def criar_e_inserir_no_banco_de_dados(data, tabela, conexao):
     df.to_sql(tabela, conexao, if_exists='replace', index=False)
 
 # Criar conexão com o banco de dados SQLite
-conexao = sqlite3.connect('db/nba_team_base.db')
+conexao = sqlite3.connect('3. Database/3.1. NBA/nba_team.db')
 
 # Obter dados de todas as equipes da NBA
 all_teams = teams.get_teams()
