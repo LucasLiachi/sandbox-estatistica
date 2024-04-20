@@ -3,9 +3,9 @@
 ## 1. Fase de Planejamento da Pesquisa
 
 Durante esta fase, os pesquisadores definem suas perguntas de pesquisa, objetivos e métodos de coleta de dados. Eles também determinam o tamanho da amostra necessário e desenvolvem um plano detalhado para conduzir o estudo. Esta fase inclui:
-
 - **Definição de Objetivos**: Identificação dos objetivos e questões de pesquisa a serem abordados no estudo.
 - **Planejamento do Estudo**: Determinação do design do estudo, seleção de métodos de coleta de dados e estabelecimento de critérios de inclusão e exclusão.
+- **Determinação das variáveis**: Identificação das variáriaveis utilizadas nas amostas.
 - **Determinação do Tamanho da Amostra**: Cálculo do tamanho da amostra necessário para garantir poder estatístico adequado.
 
 ## 2. Fase de Coleta de Dados
@@ -15,7 +15,6 @@ Durante a fase de coleta de dados, os pesquisadores implementam o plano estabele
 ## 3. Fase de Análise Estatística
 
 Na fase de análise estatística, os dados coletados são analisados para responder às perguntas de pesquisa e testar hipóteses. Esta fase inclui:
-
 - **Estimação de Parâmetros Populacionais**: Cálculo de estimativas e intervalos de confiança para parâmetros populacionais com base nos dados da amostra.
 - **Uso de Testes Estatísticos**: Aplicação de testes estatísticos para fazer inferências sobre a população com base nos resultados observados na amostra.
 
