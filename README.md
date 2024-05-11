@@ -21,7 +21,7 @@ O objetivo deste projeto é servir como um repositório centralizado para os meu
 
 O repositório está organizado em três grandes pastas:
 
-1. **Análises**: Nesta pasta, você encontrará notebooks, scripts ou documentos relacionados a análises estatísticas que realizei. Aqui, procuro explorar dados, aplicar métodos estatísticos e gerar insights a partir das informações disponíveis.
+1.  **Análises**: Nesta pasta, você encontrará notebooks, scripts ou documentos relacionados a análises estatísticas que realizei. Aqui, procuro explorar dados, aplicar métodos estatísticos e gerar insights a partir das informações disponíveis.
 
 2. **Coleta de Dados**: A pasta de Coleta de Dados contém scripts, documentos ou informações relacionadas à obtenção e preparação de dados para análises. Isso pode incluir técnicas de raspagem de dados da web, integração de diferentes fontes de dados e processamento para tornar os dados adequados para análises estatísticas.
 
