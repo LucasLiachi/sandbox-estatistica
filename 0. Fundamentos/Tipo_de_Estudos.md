@@ -8,7 +8,7 @@ Os estudos observacionais são conduzidos através da observação de eventos ou
 
 Os estudos de coorte acompanham grupos de indivíduos ao longo do tempo para identificar possíveis fatores de risco ou causas de doenças. Os participantes são classificados com base em características como exposição a um fator de risco ou presença de uma condição de saúde, e então são acompanhados para determinar se desenvolvem a doença de interesse.
 
-![Diagrama](img/diagram_coorte.png)
+[Diagrama](diagram_coorte.png)
 
 ### Estudos de Caso-Controle
 

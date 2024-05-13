@@ -4,10 +4,9 @@ Bem-vindo ao meu repositório de estudos em estatística! Este repositório foi 
 
 ## Objetivo do Projeto
 
-O objetivo deste projeto é servir como um repositório centralizado para os meus estudos em estatística, facilitando a organização e o compartilhamento de materiais relacionados. Além disso, pretendo utilizar este repositório para aprimorar minhas habilidades em estatística, explorando diferentes técnicas, métodos e conjuntos de dados.
+O objetivo deste projeto é servir como um repositório centralizado para os meus estudos em estatística, facilitando a organização e o compartilhamento de materiais relacionados. Além disso, pretendo utilizar este repositório para aprimorar minhas habilidades em estatística, explorando diferentes técnicas, métodos e conjuntos de dados. Serão dados disponibilizados publicamente e tratados por mim, portanto respeita a origem mas contem um resultado empregado de acordo com o objetivo de cada projeto proposto no escopo da analise.
 
 ## Metodos empregados
-
 - **Pesquisa**:
 - **Ferramentas de LLM**:
 - **Linguagens de programação**:
@@ -16,16 +15,17 @@ O objetivo deste projeto é servir como um repositório centralizado para os meu
 - **Ferramentas de bancos de dados**:
 - **Ferramentas de visualização**:
 
-
 ## Estrutura do Repositório
 
 O repositório está organizado em três grandes pastas:
 
-1. **Análises**: Nesta pasta, você encontrará notebooks, scripts ou documentos relacionados a análises estatísticas que realizei. Aqui, procuro explorar dados, aplicar métodos estatísticos e gerar insights a partir das informações disponíveis.
+1.  **Fundamentos**: Apresentando os métodos empregados, busco entregar os fundamentos para os projetos de pesquisa. Determino nesta pasta as boas práticas de análise estatística, junto do template utilizado no decorrer do projeto.
 
-2. **Coleta de Dados**: A pasta de Coleta de Dados contém scripts, documentos ou informações relacionadas à obtenção e preparação de dados para análises. Isso pode incluir técnicas de raspagem de dados da web, integração de diferentes fontes de dados e processamento para tornar os dados adequados para análises estatísticas.
+2.  **Análises**: Nesta pasta, você encontrará notebooks dos projetos, scripts de análise de dados e documentos de orientação, relacionados a análises estatísticas aplicada. Aqui, procuro explorar na prática os métodos e gerar insights a partir das informações coletadas.
 
-3. **Banco de Dados**: Aqui estão os conjuntos de dados que utilizei ou estou utilizando nos meus estudos. Esses dados podem ser de fontes públicas, conjuntos de dados simulados ou dados criados para fins específicos de análise estatística.
+3. **Coleta de Dados**: A pasta de Coleta de Dados contém scripts, documentos ou informações para à obtenção e preparação de dados utilizados nas análises. Isso pode incluir técnicas de raspagem de dados da web, integração de diferentes fontes (API's ou bancos de dados) e o processamento para tornar os dados adequados para análises estatísticas.
+
+4. **Banco de Dados**: Aqui estão os conjuntos de dados tratados que utilizei ou estou utilizando nos meus estudos. Esses dados podem ser de fontes públicas, conjuntos de dados simulados ou dados criados para fins específicos de análise estatística. Neste local consta os resultados para análises, portanto já contempla o tratamento prévio aplicado na coleta.
 
 ## Referências
 
