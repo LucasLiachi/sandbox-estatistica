@@ -1,6 +1,6 @@
-# Tipos de Estudos
+# 1. Tipos de Estudos
 
-## Estudos Observacionais
+## 1.1. Estudos Observacionais
 
 Os estudos observacionais são conduzidos através da observação de eventos ou fenômenos naturais, sem intervenção direta do pesquisador na atribuição de tratamentos ou exposições. Eles são úteis para explorar associações entre variáveis, identificar padrões e gerar hipóteses. Existem diferentes tipos de estudos observacionais:
 
@@ -21,7 +21,7 @@ Nesses estudos, os participantes são selecionados com base em sua condição (c
 
 Também chamado de secciona ou estudo de prevalência, os estudos transversais coletam dados em um ponto específico no tempo, examinando a relação entre diferentes variáveis em uma população em um determinado momento. Eles são úteis para examinar a prevalência de uma condição de saúde ou comportamento em uma população em um momento específico. O Fator de exposuição e o desfecho são observados simultaneamente.
 
-## Estudos Experimentais
+## 1.2. Estudos Experimentais
 
 Os estudos experimentais envolvem a manipulação deliberada de uma ou mais variáveis independentes para observar o efeito causado sobre uma ou mais variáveis dependentes. Eles são usados para testar hipóteses causais e estabelecer relações de causa e efeito. Alguns exemplos de estudos experimentais incluem:
 
