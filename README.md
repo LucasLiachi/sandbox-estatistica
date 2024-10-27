@@ -1,4 +1,4 @@
-# sandbox-estatistica - Repositório Estatística
+# sandbox-estatistica - Repositório Compartilhado Estatística
 
 Bem-vindo ao meu repositório de estudos em estatística! Este repositório foi criado com o objetivo de organizar materiais, análises, coleta de dados e bancos de dados utilizados nos meus estudos e projetos relacionados à estatística.
 
