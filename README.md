@@ -2,53 +2,104 @@
 
 Bem-vindo ao meu repositório de estudos em estatística! Este repositório foi criado com o objetivo de organizar materiais, análises, coleta de dados e bancos de dados utilizados nos meus estudos e projetos relacionados à estatística.
 
-## Objetivo do Projeto
+---
 
-O objetivo deste projeto é servir como um repositório centralizado para os meus estudos em estatística, facilitando a organização e o compartilhamento de materiais relacionados. Além disso, pretendo utilizar este repositório para aprimorar minhas habilidades em estatística, explorando diferentes técnicas, métodos e conjuntos de dados. Serão dados disponibilizados publicamente e tratados por mim, portanto respeita a origem mas contem um resultado empregado de acordo com o objetivo de cada projeto proposto no escopo da analise.
+## **1. Objetivo do Projeto**
 
-## Metodos empregados
-- **Pesquisa**:
-- **Ferramentas de LLM**:
-- **Linguagens de programação**:
-- **Estatística**:
-- **API's**:
-- **Ferramentas de bancos de dados**:
-- **Ferramentas de visualização**:
+O objetivo deste projeto é servir como um repositório centralizado para os meus estudos em estatística, facilitando a organização e o compartilhamento de materiais relacionados. Além disso, pretendo utilizar este repositório para aprimorar minhas habilidades em estatística, explorando diferentes técnicas, métodos e conjuntos de dados. Os dados disponibilizados são tratados por mim e respeitam sua origem, adaptados aos objetivos de cada projeto proposto no escopo da análise.
 
-## Estrutura do Repositório
+---
 
-O repositório está organizado em três grandes pastas:
+## **2. Métodos Empregados**
 
-1.  **Fundamentos**: Apresentando os métodos empregados, busco entregar os fundamentos para os projetos de pesquisa. Determino nesta pasta as boas práticas de análise estatística, junto do template utilizado no decorrer do projeto.
+- **Pesquisa**: Métodos sistemáticos para coleta e análise de informações.
+- **Ferramentas de LLM**: Modelos de linguagem para análise textual.
+- **Linguagens de programação**: Ferramentas computacionais para análise estatística.
+- **Estatística**: Métodos quantitativos para interpretação de dados.
+- **APIs**: Integração com fontes externas para coleta automatizada de dados.
+- **Ferramentas de bancos de dados**: Armazenamento e manipulação eficiente dos dados.
+- **Ferramentas de visualização**: Gráficos e tabelas para interpretação clara dos resultados.
 
-2.  **Análises**: Nesta pasta, você encontrará notebooks dos projetos, scripts de análise de dados e documentos de orientação, relacionados a análises estatísticas aplicada. Aqui, procuro explorar na prática os métodos e gerar insights a partir das informações coletadas.
+---
 
-3. **Coleta de Dados**: A pasta de Coleta de Dados contém scripts, documentos ou informações para à obtenção e preparação de dados utilizados nas análises. Isso pode incluir técnicas de raspagem de dados da web, integração de diferentes fontes (API's ou bancos de dados) e o processamento para tornar os dados adequados para análises estatísticas.
+## **3. Conceitos**
 
-4. **Banco de Dados**: Aqui estão os conjuntos de dados tratados que utilizei ou estou utilizando nos meus estudos. Esses dados podem ser de fontes públicas, conjuntos de dados simulados ou dados criados para fins específicos de análise estatística. Neste local consta os resultados para análises, portanto já contempla o tratamento prévio aplicado na coleta.
+### **3.1. O que é Estatística?**
 
-## Referências
+A estatística vai além da matemática, utilizando conhecimentos matemáticos e linguísticos para interpretar cálculos e inferir sobre populações em estudo. É amplamente empregada na análise quantitativa de fenômenos sociais e na tomada de decisões baseadas em dados.
 
-### 1.1. Metodos de pesquisa:
+### **3.2. Processo Estatístico**
 
-[Journal of Data Science. (2024). Métodos de Pesquisa e Análise Estatística: Tipos, Fases e Aplicações, 10(2), 123-135. DOI: 10.1234/jds.2024.5678.](https://www.biolinscientific.com/blog/methods-used-in-scientific-data-analysis)
+O processo estatístico envolve quatro etapas fundamentais:
+- Coleta
+- Análise
+- Interpretação
+- Apresentação dos dados
 
-[O que é um estudo observacional? Disponível em: https://www.questionpro.com/blog/pt-br/estudo-observacional/. Acesso: 30/03/2024. ](https://www.questionpro.com/blog/pt-br/estudo-observacional/)
+Essas etapas são essenciais para embasar decisões informadas.
 
-[CONSORT Group. CONSORT 2010 Explanation and Elaboration: updated guidelines for reporting parallel group randomised trials. BMJ. 2010;340:c869.](https://www.bmj.com/content/340/bmj.c869)
+### **3.3. População e Amostra**
 
-### 1.2. Distribuição:
+- **População**: Conjunto total dos elementos que compartilham características comuns no estudo.
+- **Amostra**: Subconjunto representativo da população, utilizado quando é inviável estudar toda a população.
 
-### 1.3. Regressão Lienar:
+### **3.4. Tipos de Variáveis**
 
-### 2.1. NBA:
+As variáveis podem ser classificadas como:
+- Qualitativas (não mensuráveis)
+- Quantitativas (mensuráveis), subdivididas em contínuas (exemplo: salário) e discretas (exemplo: número de carros).
 
-[pypi.org nba_api 1.4.1 pip install nba_api](https://pypi.org/project/nba_api/)
+### **3.5. Estatística Descritiva**
 
+Aplica conceitos como medidas de tendência central (média, mediana, moda) e dispersão (variabilidade) para interpretar os dados. O uso de gráficos e tabelas auxilia na comunicação clara dos resultados.
 
-## Notas finais
+---
 
-Sinta-se à vontade para explorar os materiais disponíveis neste repositório e entre em contato caso tenha alguma sugestão, questionamento ou deseje colaborar em algum projeto relacionado à estatística.
+## **4. Tipos de Estudos**
+
+### **4.1. Estudos Observacionais**
+- **Estudos Transversais**: Coleta simultânea do fator de exposição e desfecho.
+- **Estudos Caso-Controle**: Investigação retrospectiva da exposição a fatores entre casos (com a condição) e controles (sem a condição).
+- **Estudos Coorte**: Acompanhamento prospectivo ou retrospectivo para identificar fatores associados ao desfecho.
+
+### **4.2. Estudos Experimentais**
+- **Experimentos Controlados**: Manipulação deliberada das variáveis em ambientes controlados.
+- **Ensaios Clínicos Randomizados (ECRs)**: Divisão aleatória dos participantes em grupos experimentais e controle, seguindo diretrizes como o CONSORT para garantir transparência.
+
+---
+
+## **5. Fases do Método de Pesquisa**
+
+### **5.1. Fase de Planejamento**
+- Definição dos objetivos da pesquisa.
+- Planejamento do design do estudo, critérios de inclusão/exclusão e cronograma.
+- Identificação das variáveis dependentes e independentes.
+- Cálculo do tamanho da amostra para garantir representatividade.
+
+### **5.2. Fase de Coleta de Dados**
+Implementação do plano definido na fase anterior, utilizando métodos como entrevistas, questionários ou integração com APIs.
+
+### **5.3. Fase de Análise Estatística**
+- Escolha do tipo de estudo (observacional ou experimental).
+- Estimação dos parâmetros populacionais com intervalos de confiança.
+- Aplicação de testes estatísticos apropriados para validar hipóteses.
+
+### **5.4. Fase de Interpretação dos Resultados**
+Análise crítica dos resultados obtidos à luz das questões iniciais da pesquisa, culminando em conclusões práticas ou sugestões futuras.
+
+---
+
+## **6. Referências**
+
+1. Journal of Data Science (2024). Métodos de Pesquisa e Análise Estatística.
+2. QuestionPro Blog - "O que é um estudo observacional?"
+3. CONSORT Group - "CONSORT 2010 Explanation and Elaboration."
+
+---
+
+## **Notas Finais**
+
+Sinta-se à vontade para explorar os materiais disponíveis neste repositório! Caso tenha sugestões ou interesse em colaborar, entre em contato.
 
 **Obrigado por visitar!**
 
