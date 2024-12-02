@@ -103,3 +103,35 @@ Sinta-se à vontade para explorar os materiais disponíveis neste repositório! 
 
 **Obrigado por visitar!**
 
+
+# Archive Documentation
+
+## Overview
+This archive contains important code and documentation for [project name]. It serves as a historical record and reference point for [main purpose].
+
+## Structure
+- `/src` - Source code files
+- `/docs` - Documentation and specifications
+- `/assets` - Media and resources
+- `/tests` - Test files and test data
+
+## Contents
+Key components include:
+1. [Component 1] - Brief description
+2. [Component 2] - Brief description
+3. [Component 3] - Brief description
+
+## Usage
+Instructions for accessing and using archived content:
+1. How to extract/view files
+2. Important dependencies or requirements
+3. Version information
+
+## Notes
+- [Important note 1]
+- [Important note 2]
+- Last updated: [date]
+
+## Contact
+Maintainer: [name/email]
+
