@@ -1,63 +1,114 @@
 import math
+import numpy as np
 
-# Definindo a função f(t)
+# =====================================
+# Definição das funções de integração
+# =====================================
+
 def f(t):
+    """
+    Função de exemplo para calcular a integral: sin(π*t²/2)
+    
+    Args:
+        t (float): Valor de entrada
+        
+    Returns:
+        float: Valor da função no ponto t
+    """
     return math.sin(math.pi * t**2/2)
 
-# Definindo a regra dos trapézios simples
-def trapezoidal_rule_simple(a, b, n):
+def trapezoidal_rule_simple(f, a, b, n):
+    """
+    Implementação da regra do trapézio simples.
+    
+    Args:
+        f (function): A função a ser integrada
+        a (float): Limite inferior da integração
+        b (float): Limite superior da integração
+        n (int): Número de subintervalos
+    
+    Returns:
+        float: Aproximação da integral definida
+    """
     h = (b - a) / n
-    sum = (f(a) + f(b)) / 2
+    sum_value = (f(a) + f(b)) / 2
     for i in range(1, n):
         x = a + i * h
-        sum += f(x)
-    return h * sum
+        sum_value += f(x)
+    return h * sum_value
 
-# Definindo a regra dos trapézios composta
-def trapezoidal_rule_composite(a, b, n):
-    h = (b - a) / n
-    sum = (f(a) + f(b)) / 2
-    for i in range(1, n):
-        x = a + i * h
-        sum += f(x)
-    return h * sum
+def trapezoidal_rule_composite(f, a, b, n):
+    """
+    Implementação da regra do trapézio composta usando numpy para vetorização.
+    
+    Args:
+        f (function): A função a ser integrada
+        a (float): Limite inferior da integração
+        b (float): Limite superior da integração
+        n (int): Número de subintervalos
+    
+    Returns:
+        float: Aproximação da integral definida
+    """
+    # Cria um array com os pontos de avaliação
+    x = np.linspace(a, b, n+1)
+    # Avalia a função em todos os pontos
+    y = np.array([f(xi) for xi in x])
+    
+    # Aplica a regra do trapézio
+    area = (b - a) / (2 * n) * (y[0] + 2 * np.sum(y[1:-1]) + y[-1])
+    return area
 
-# Calculando a integral de f(t) usando a regra dos trapézios simples
-integral_simple = trapezoidal_rule_simple(0, 2-math.sqrt(2), 1)
-print("Integral usando a regra dos trapézios simples:", integral_simple)
+def calculate_distance_from_velocity(times, velocities):
+    """
+    Calcula a distância percorrida a partir de dados de tempo e velocidade
+    usando a regra do trapézio.
+    
+    Args:
+        times (list): Lista de tempos em segundos
+        velocities (list): Lista de velocidades em km/h
+    
+    Returns:
+        float: Distância calculada em metros
+    """
+    if len(times) != len(velocities):
+        raise ValueError("Os arrays de tempo e velocidade devem ter o mesmo tamanho")
+    
+    n = len(times) - 1  # número de intervalos
+    areas = []
+    
+    for i in range(n):
+        v1, v2 = velocities[i], velocities[i+1]  # velocidades nos pontos
+        t1, t2 = times[i], times[i+1]  # tempos nos pontos
+        area = (v1 + v2) * (t2 - t1) / 2  # área do trapézio
+        areas.append(area)
+    
+    # Convertendo para metros (km/h * s * 1000/3600 = m)
+    distance = sum(areas) * 1000/3600
+    return distance
 
-# Calculando a integral de f(t) usando a regra dos trapézios composta com diferentes números de trapézios
-for n in [3, 5, 10, 20, 60]:
-    integral_composite = trapezoidal_rule_composite(0, 2-math.sqrt(2), n)
-    print("Integral usando a regra dos trapézios composta com", n, "trapézios:", integral_composite)
+# =====================================
+# Exemplos de uso
+# =====================================
 
-t = [0, 120, 240, 360, 480, 600, 720, 840, 960, 1080, 1200] # tempos em segundos
-"""
-Este script calcula a distância aproximada percorrida usando a regra do trapézio para integração numérica.
-Variáveis:
-    t (list): Uma lista de intervalos de tempo em segundos.
-    v (list): Uma lista de velocidades em km/h correspondentes a cada intervalo de tempo.
-    n (int): O número de intervalos, calculado como o comprimento da lista de tempos menos um.
-    h (float): O tamanho de cada intervalo, calculado como a diferença entre os últimos e primeiros valores de tempo dividida pelo número de intervalos.
-    areas (list): Uma lista para armazenar a área de cada trapézio.
-    distancia (float): A distância total percorrida, calculada somando as áreas dos trapézios e convertendo de km/h para m/s.
-O script itera através de cada intervalo, calcula a área do trapézio formado pelas velocidades nos pontos finais do intervalo, e soma essas áreas para aproximar a distância total percorrida. O resultado é impresso em metros.
-"""
-v = [20, 22, 23, 25, 30, 31, 32, 40, 45, 50, 65] # velocidades em km/h
-
-n = len(t) - 1 # número de intervalos
-h = (t[-1] - t[0]) / n # tamanho de cada intervalo
-
-areas = []
-for i in range(n):
-    v1 = v[i]
-    v2 = v[i+1]
-    t1 = t[i]
-    t2 = t[i+1]
-    area = (v1 + v2) * (t2 - t1) / 2
-    areas.append(area)
-
-distancia = sum(areas) * 1000/3600 # convertendo de km/h para m/s
-
-print(f"Aproximação da distância percorrida: {distancia:.0f} metros")
+if __name__ == "__main__":
+    # Exemplo 1: Cálculo da integral de f(t) = sin(π*t²/2)
+    a = 0
+    b = 2 - math.sqrt(2)
+    
+    # Usando a regra do trapézio simples
+    integral_simple = trapezoidal_rule_simple(f, a, b, 1)
+    print(f"Integral usando a regra do trapézio simples: {integral_simple:.6f}")
+    
+    # Usando a regra do trapézio composta com diferentes números de trapézios
+    for n in [3, 5, 10, 20, 60]:
+        integral_composite = trapezoidal_rule_composite(f, a, b, n)
+        print(f"Integral usando a regra do trapézio composta com {n} trapézios: {integral_composite:.10f}")
+    
+    # Exemplo 2: Cálculo de distância a partir de velocidades
+    t = [0, 120, 240, 360, 480, 600, 720, 840, 960, 1080, 1200]  # tempos em segundos
+    v = [20, 22, 23, 25, 30, 31, 32, 40, 45, 50, 65]  # velocidades em km/h
+    
+    distancia = calculate_distance_from_velocity(t, v)
+    print(f"\nAproximação da distância percorrida: {distancia:.0f} metros")
 
