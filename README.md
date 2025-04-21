@@ -1,137 +1,287 @@
-# sandbox-estatistica - Repositório Compartilhado Estatística
+# sandbox-estatistica
 
-Bem-vindo ao meu repositório de estudos em estatística! Este repositório foi criado com o objetivo de organizar materiais, análises, coleta de dados e bancos de dados utilizados nos meus estudos e projetos relacionados à estatística.
-
----
-
-## **1. Objetivo do Projeto**
-
-O objetivo deste projeto é servir como um repositório centralizado para os meus estudos em estatística, facilitando a organização e o compartilhamento de materiais relacionados. Além disso, pretendo utilizar este repositório para aprimorar minhas habilidades em estatística, explorando diferentes técnicas, métodos e conjuntos de dados. Os dados disponibilizados são tratados por mim e respeitam sua origem, adaptados aos objetivos de cada projeto proposto no escopo da análise.
+Bem-vindo ao repositório de estudos em estatística! Este projeto centraliza materiais, análises, códigos, bancos de dados e documentação para estudos e aplicações práticas em estatística, econometria e ciência de dados.
 
 ---
 
-## **2. Métodos Empregados**
+## 1. Objetivo do Projeto
 
-- **Pesquisa**: Métodos sistemáticos para coleta e análise de informações.
-- **Ferramentas de LLM**: Modelos de linguagem para análise textual.
-- **Linguagens de programação**: Ferramentas computacionais para análise estatística.
-- **Estatística**: Métodos quantitativos para interpretação de dados.
-- **APIs**: Integração com fontes externas para coleta automatizada de dados.
-- **Ferramentas de bancos de dados**: Armazenamento e manipulação eficiente dos dados.
-- **Ferramentas de visualização**: Gráficos e tabelas para interpretação clara dos resultados.
+Organizar e compartilhar materiais de estudo, implementações, tutoriais e projetos práticos em estatística, cobrindo desde conceitos fundamentais até aplicações avançadas, sempre respeitando as fontes dos dados e adaptando-os aos objetivos de cada análise.
 
 ---
 
-## **3. Conceitos**
+## 2. Estrutura do Repositório
 
-### **3.1. O que é Estatística?**
+O repositório está organizado em:
 
-A estatística vai além da matemática, utilizando conhecimentos matemáticos e linguísticos para interpretar cálculos e inferir sobre populações em estudo. É amplamente empregada na análise quantitativa de fenômenos sociais e na tomada de decisões baseadas em dados.
+### 2.1 Diretório Principal
+- **README.md**: Este arquivo, com visão geral, instruções e sumário dos materiais.
+- **requirements.txt**: Lista de dependências Python necessárias para executar os códigos do projeto.
+- **.gitignore**: Configurações para ignorar arquivos e diretórios no controle de versão.
+- **revisar.md**: Documentação com itens a serem revisados.
 
-### **3.2. Processo Estatístico**
+### 2.2 Diretório de Conceitos
+- **conceitos/**  
+  Dividido em três níveis de complexidade:
+  - **basicos/**: Probabilidade, distribuições, métodos numéricos fundamentais, densidade de probabilidade, erro de arredondamento, regra do trapézio, etc.
+  - **intermediarios/**: ANOVA, distribuição de Poisson, estimação de parâmetros, testes de hipótese, regressão linear, interpolação de Lagrange, integral, estudos de coorte, etc.
+  - **avancados/**: Álgebra linear, álgebra matricial, econometria, inferência causal, regressão linear múltipla, iteração linear, etc.
+  - Cada subpasta contém arquivos `.md` (teoria), `.py` (implementação), `.ipynb` (notebooks) e arquivos de teste.
 
-O processo estatístico envolve quatro etapas fundamentais:
-- Coleta
-- Análise
-- Interpretação
-- Apresentação dos dados
+#### 2.2.1 Conceitos Básicos de Estatística
 
-Essas etapas são essenciais para embasar decisões informadas.
+Esta seção contém os conceitos fundamentais de estatística, incluindo:
 
-### **3.3. População e Amostra**
+- Classificação de Variáveis
+- Probabilidade Básica
+- Distribuição Binomial
+- Densidade de Probabilidade
 
-- **População**: Conjunto total dos elementos que compartilham características comuns no estudo.
-- **Amostra**: Subconjunto representativo da população, utilizado quando é inviável estudar toda a população.
+**Pré-requisitos**
+- Matemática básica
+- Noções de conjuntos
 
-### **3.4. Tipos de Variáveis**
+**Como usar**
+Cada conceito possui sua própria documentação em formato markdown (.md) e implementação em Python (.py) quando aplicável.
 
-As variáveis podem ser classificadas como:
-- Qualitativas (não mensuráveis)
-- Quantitativas (mensuráveis), subdivididas em contínuas (exemplo: salário) e discretas (exemplo: número de carros).
+**Estrutura**
+- `classificacao-da-variavel.md`: Tipos de variáveis estatísticas
+- `Probabilidade.md/.py`: Fundamentos de probabilidade
+- `binomial.py`: Implementação da distribuição binomial
+- `densidade-de-probabilidade.md/.py`: Conceitos de densidade de probabilidade
 
-### **3.5. Estatística Descritiva**
+#### 2.2.2 Conceitos Intermediários de Estatística
 
-Aplica conceitos como medidas de tendência central (média, mediana, moda) e dispersão (variabilidade) para interpretar os dados. O uso de gráficos e tabelas auxilia na comunicação clara dos resultados.
+Esta seção contém conceitos de nível intermediário, incluindo:
+
+- Testes de Hipóteses (t-Student)
+- Análise de Variância (ANOVA)
+- Regressão Linear Simples
+- Distribuição de Poisson
+- Estimação de Parâmetros
+
+**Pré-requisitos**
+- Conceitos básicos de estatística
+- Probabilidade
+- Cálculo básico
+
+**Como usar**
+Cada conceito contém:
+- Documentação teórica (.md)
+- Implementação prática (.py)
+- Exemplos de aplicação
+- Visualizações quando aplicável
+
+**Estrutura**
+- `regressao_linear.md/.py`: Análise de regressão linear simples
+- `teste_hipotese_tstudent.md/.py`: Testes de hipóteses usando distribuição t-Student
+- `ANOVA.md/.py`: Análise de Variância
+- `distribuicao-de-Poisson.md/.py`: Distribuição de Poisson e aplicações
+- `estimacao-de-parametros.md`: Teoria de estimação de parâmetros
+
+#### 2.2.3 Conceitos Avançados de Estatística
+
+Esta seção abrange tópicos avançados de estatística e suas aplicações:
+
+- Álgebra Linear e Matricial
+- Regressão Linear Múltipla
+- Econometria
+- Inferência Causal
+
+**Pré-requisitos**
+- Conceitos intermediários de estatística
+- Álgebra linear básica
+- Cálculo multivariável
+- Programação em Python
+
+**Como usar**
+Cada tópico inclui:
+- Fundamentação teórica (.md)
+- Implementações complexas (.py)
+- Exemplos práticos
+- Visualizações e diagramas
+
+**Estrutura**
+- `algebra_linear.md/.py`: Conceitos e aplicações de álgebra linear
+- `algebra-matricial.md/.py`: Operações matriciais e suas aplicações
+- `regressao-linear-multipla.md/.py`: Análise de regressão multivariada
+- `Inferencia-causal.md`: Métodos de inferência causal
+- Documentação sobre econometria e suas aplicações
+
+### 2.3 Diretório de Projetos
+- **projetos/**  
+  Projetos práticos e estudos de caso, como:
+  - Análise de aluguel
+  - Análise de regressão em fábrica
+  - Regressão linear BCB
+  - Análise NBA
+  - Análise de síndrome gripal no SUS
+  - Simulação de filas
+  - Outros projetos específicos
+
+#### 2.3.1 Estudos de Caso
+
+Esta seção contém estudos de caso práticos usando dados reais:
+
+**Casos Disponíveis**
+
+**Análises Esportivas (NBA)**
+- Histogramas de times da NBA
+- Análise de desempenho de jogadores
+- Teste de homogeneidade para arremessos de 3 pontos
+
+**Análises de Saúde**
+- Síndrome gripal em dados do SUS
+- Análise de filas hospitalares
+- Simulações de atendimento
+
+**Análises Governamentais**
+- Média de gastos de deputados
+- Análise de renda familiar
+- Projetos de econometria aplicada
+
+**Metodologia**
+Cada estudo de caso deve conter:
+- Contextualização do problema
+- Metodologia estatística aplicada
+- Código fonte comentado
+- Visualizações
+- Conclusões e recomendações práticas
+
+**Estrutura dos Projetos**
+1. Arquivo de documentação (.md)
+2. Scripts de análise (.py)
+3. Dados utilizados (quando públicos)
+4. Visualizações geradas
+
+#### 2.3.2 Análises Estatísticas
+
+Esta seção contém análises estatísticas completas de diversos conjuntos de dados:
+
+**Projetos Disponíveis**
+
+**Análise de Aluguéis**
+- Análise de preços e fatores que influenciam valores de aluguel
+- Implementação de modelos de regressão
+- Visualizações e conclusões
+
+**Análise de Regressão em Ambiente Fabril**
+- Estudo de umidade e variáveis de controle
+- Análise de correlação entre fatores industriais
+
+**Análise BCB - Regressão Linear**
+- Análise de dados do Banco Central
+- Modelagem econométrica
+- Séries temporais financeiras
+
+**Como Contribuir**
+1. Use o template disponível em `projetos/templates`
+2. Documente claramente metodologia e fontes de dados
+3. Inclua visualizações relevantes
+4. Forneça conclusões e interpretações práticas
 
 ---
 
-## **4. Tipos de Estudos**
+## 3. Arquivos Especiais
 
-### **4.1. Estudos Observacionais**
-- **Estudos Transversais**: Coleta simultânea do fator de exposição e desfecho.
-- **Estudos Caso-Controle**: Investigação retrospectiva da exposição a fatores entre casos (com a condição) e controles (sem a condição).
-- **Estudos Coorte**: Acompanhamento prospectivo ou retrospectivo para identificar fatores associados ao desfecho.
+### 3.1 Requirements.txt
 
-### **4.2. Estudos Experimentais**
-- **Experimentos Controlados**: Manipulação deliberada das variáveis em ambientes controlados.
-- **Ensaios Clínicos Randomizados (ECRs)**: Divisão aleatória dos participantes em grupos experimentais e controle, seguindo diretrizes como o CONSORT para garantir transparência.
+O arquivo `requirements.txt` contém todas as dependências Python necessárias para executar os códigos e notebooks deste projeto:
 
----
+```
+numpy>=1.21.0     # Operações numéricas e álgebra matricial
+scipy>=1.7.0      # Funções estatísticas e otimização
+pandas>=1.3.0     # Manipulação e análise de dados
+matplotlib>=3.4.0 # Visualização de dados
+seaborn>=0.11.0   # Visualizações estatísticas avançadas
+jupyter>=1.0.0    # Para executar os notebooks
+pytest>=6.2.0     # Para executar os testes unitários
+```
 
-## **5. Fases do Método de Pesquisa**
+Para instalar todas as dependências, execute:
+```bash
+pip install -r requirements.txt
+```
 
-### **5.1. Fase de Planejamento**
-- Definição dos objetivos da pesquisa.
-- Planejamento do design do estudo, critérios de inclusão/exclusão e cronograma.
-- Identificação das variáveis dependentes e independentes.
-- Cálculo do tamanho da amostra para garantir representatividade.
+### 3.2 .gitignore
 
-### **5.2. Fase de Coleta de Dados**
-Implementação do plano definido na fase anterior, utilizando métodos como entrevistas, questionários ou integração com APIs.
+O arquivo `.gitignore` configura quais arquivos e diretórios devem ser ignorados pelo sistema de controle de versão Git. Isso inclui:
 
-### **5.3. Fase de Análise Estatística**
-- Escolha do tipo de estudo (observacional ou experimental).
-- Estimação dos parâmetros populacionais com intervalos de confiança.
-- Aplicação de testes estatísticos apropriados para validar hipóteses.
+- Arquivos compilados Python (`__pycache__/`, `*.pyc`)
+- Ambientes virtuais (`venv/`, `.env`)
+- Arquivos de cache (`__pycache__/`, `.ipynb_checkpoints`)
+- Arquivos de build e distribuição
+- Arquivos temporários e logs
+- Arquivos específicos de IDE/editores
 
-### **5.4. Fase de Interpretação dos Resultados**
-Análise crítica dos resultados obtidos à luz das questões iniciais da pesquisa, culminando em conclusões práticas ou sugestões futuras.
-
----
-
-## **6. Referências**
-
-1. Journal of Data Science (2024). Métodos de Pesquisa e Análise Estatística.
-2. QuestionPro Blog - "O que é um estudo observacional?"
-3. CONSORT Group - "CONSORT 2010 Explanation and Elaboration."
+Este arquivo é importante para manter o repositório limpo, incluindo apenas código fonte e documentação relevantes, sem arquivos temporários ou específicos do ambiente local.
 
 ---
 
-## **Notas Finais**
+## 4. Materiais e Conteúdo
 
-Sinta-se à vontade para explorar os materiais disponíveis neste repositório! Caso tenha sugestões ou interesse em colaborar, entre em contato.
+O repositório cobre:
 
-**Obrigado por visitar!**
+- Conceitos fundamentais de estatística, probabilidade e álgebra linear
+- Métodos numéricos (bisseção, Newton, trapézio, interpolação)
+- Distribuições estatísticas (binomial, Poisson, densidade de probabilidade)
+- Testes de hipótese (t-Student, qui-quadrado, ANOVA)
+- Regressão linear simples e múltipla
+- Econometria e inferência causal
+- Exercícios práticos e implementações em Python
+- Tutoriais em Jupyter Notebook para aprendizado interativo
+- Projetos aplicados com dados reais ou simulados
 
+---
 
-# Archive Documentation
+## 5. Como Utilizar
 
-## Overview
-This archive contains important code and documentation for [project name]. It serves as a historical record and reference point for [main purpose].
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/sandbox-estatistica.git
+   ```
+2. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Explore os diretórios:
+   - `/conceitos/`: Material teórico, implementações e exercícios
+   - `/projetos/`: Estudos de caso e aplicações práticas
+4. Execute notebooks interativos:
+   ```bash
+   jupyter notebook
+   ```
+5. Execute testes para verificar implementações:
+   ```bash
+   pytest
+   ```
 
-## Structure
-- `/src` - Source code files
-- `/docs` - Documentation and specifications
-- `/assets` - Media and resources
-- `/tests` - Test files and test data
+---
 
-## Contents
-Key components include:
-1. [Component 1] - Brief description
-2. [Component 2] - Brief description
-3. [Component 3] - Brief description
+## 6. Contribuições
 
-## Usage
-Instructions for accessing and using archived content:
-1. How to extract/view files
-2. Important dependencies or requirements
-3. Version information
+Contribuições são bem-vindas! Para contribuir com o projeto:
 
-## Notes
-- [Important note 1]
-- [Important note 2]
-- Last updated: [date]
+1. Faça um fork do repositório
+2. Crie um branch para sua feature (`git checkout -b feature/nova-analise`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova análise'`)
+4. Push para o branch (`git push origin feature/nova-analise`)
+5. Abra um Pull Request
 
-## Contact
-Maintainer: [name/email]
+Certifique-se de seguir as convenções de código e documentação existentes.
 
+---
+
+## 7. Licença
+
+Este projeto está sob a licença MIT.
+
+---
+
+## 8. Referências e Notas Finais
+
+- Referências bibliográficas e técnicas estão ao longo dos arquivos `.md`.
+- Os dados utilizados são tratados e adaptados para fins educacionais.
+- Para dúvidas ou sugestões, abra uma issue ou entre em contato.
+
+---
